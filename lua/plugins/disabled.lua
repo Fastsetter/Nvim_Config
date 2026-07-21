@@ -1,4 +1,3 @@
-return{
-        { "bufferline.nvim", enabled = false },
-
+return {
+    { "bufferline.nvim", enabled = false },
 }
