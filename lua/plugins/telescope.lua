@@ -1,5 +1,5 @@
 return {
-  "nvim-telescope/telescope.nvim",
+    "nvim-telescope/telescope.nvim",
     keys = {
       -- add a keymap to browse plugin files
       -- stylua: ignore
@@ -9,5 +9,4 @@ return {
         desc = "Find Plugin File",
       },
     },
-
 }

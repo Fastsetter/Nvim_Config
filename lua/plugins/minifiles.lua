@@ -21,22 +21,22 @@ return {
             width_preview = 15,
         },
     },
-    -- keys = {
-    --     -- Map mini.files to open current file's directory
-    --     {
-    --         "<leader>e",
-    --         function()
-    --             require("mini.files").open(vim.api.nvim_buf_get_name(0))
-    --         end,
-    --         desc = "Open mini.files (current file)",
-    --     },
-    --     -- Map mini.files to open current working directory
-    --     {
-    --         "<leader>E",
-    --         function()
-    --             require("mini.files").open(vim.loop.cwd())
-    --         end,
-    --         desc = "Open mini.files (cwd)",
-    --     },
-    --},
+    keys = {
+        -- Map mini.files to open current file's directory
+        {
+            "<leader>e",
+            function()
+                require("mini.files").open(vim.api.nvim_buf_get_name(0))
+            end,
+            desc = "Open mini.files (current file)",
+        },
+        -- Map mini.files to open current working directory
+        {
+            "<leader>E",
+            function()
+                require("mini.files").open(vim.loop.cwd())
+            end,
+            desc = "Open mini.files (cwd)",
+        },
+    },
 }

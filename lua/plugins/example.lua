@@ -1,15 +1,13 @@
 return {
-    { "rebelot/kanagawa.nvim" },
-    { "catppuccin/nvim", name = "catppuccin" },
+    -- { "rebelot/kanagawa.nvim" },
     { "AlessandroYorba/Alduin", name = "alduin", priority = 1000 },
     --{ "bakageddy/alduin.nvim", priority = 1000, config = true, name = "alduin-new", opts = ... },
-    { "EdenEast/nightfox.nvim", name = "nightfox" },
+    -- { "EdenEast/nightfox.nvim", name = "nightfox" },
     { "rafamadriz/friendly-snippets" },
-    { "ramojus/mellifluous.nvim" },
-    { "AlessandroYorba/Despacio" },
-    { "sainnhe/gruvbox-material" },
-    { "projekt0n/github-nvim-theme", priority = 1000 },
-    { "silentium-theme/silentium.nvim" },
+    -- { "ramojus/mellifluous.nvim" },
+    -- { "AlessandroYorba/Despacio" },
+    -- { "projekt0n/github-nvim-theme", priority = 1000 },
+    -- { "silentium-theme/silentium.nvim" },
     {
         "L3MON4D3/LuaSnip",
         config = function()
@@ -26,9 +24,7 @@ return {
     },
     {
         "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "nord",
-        },
+        opts = {},
     },
     { "folke/noice.nvim", enabled = false },
 
@@ -57,6 +53,7 @@ return {
                 "typescript",
                 "vim",
                 "yaml",
+                "cpp",
             },
         },
     },

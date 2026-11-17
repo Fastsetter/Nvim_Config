@@ -17,7 +17,6 @@ return {
                 devicons = true, -- Theming devicons with gruvbox
                 lualine = true,
             },
-
             styles = {
                 bold = false,
                 italic = true,
@@ -62,10 +61,11 @@ return {
 
             palette = {
                 -- Override the builtin palette per variant
-                -- hard = {
-                --     bg_main = "#1D2021",
-                --     fg = "#D4C5A0",
-                -- },
+                hard = {
+                    -- bg_main = "#16181c",
+                    -- bg_main = "#141415",
+                    fg = "#D4C5A0",
+                },
             },
 
             -- NOTE: Highlight groups are extended (merged) by default. Disable this

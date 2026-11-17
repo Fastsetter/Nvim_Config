@@ -15,5 +15,14 @@ map("i", "<A-j>", "<Down>", {})
 map("i", "<A-k>", "<Up>", {})
 map("i", "<A-l>", "<Right>", {})
 map("i", "<A-h>", "<Left>", {})
+map("i", "<C-H>", "<C-w>", {})
 map("t", "<C-w>", [[<C-\><C-n>]], {})
 map("t", "<M-r>", [['<C-\><C-N>"'.nr2char(getchar()).'pi']], { expr = true })
+map("i", "<C-x><C-s>", "<cmd>w<CR>", {})
+map("n", "Y", "y$")
+map("n", "<C-c>", "gcc", {})
+
+vim.keymap.set("n", "<leader>r", function()
+    vim.cmd.RustLsp("codeAction") -- supports rust-analyzer's grouping
+    -- or vim.lsp.buf.codeAction() if you don't want grouping.
+end, { silent = true, buffer = bufnr })

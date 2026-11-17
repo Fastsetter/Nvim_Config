@@ -17,7 +17,7 @@ return {
                 ["<C-h>"] = { "snippet_backward", "fallback" },
             },
             completion = {
-                list = { selection = { preselect = false, auto_insert = true } },
+                list = { selection = { preselect = true, auto_insert = true } },
             },
             sources = {
                 default = { "lsp", "path", "snippets", "buffer" },
